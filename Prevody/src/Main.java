@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 
 		/*
-		 * 16 radku, ted 33-16 = 17, 81 - 33 = 48,131 - 107 = 24;
+		 * 138 radku
 		 */
 
 		Dvoj dvoj = new Dvoj();
