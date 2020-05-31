@@ -23,8 +23,8 @@ public class Main {
 
 			int cislo = s.nextInt();
 
-			System.out.println("èíslo ke zpracování: " + cislo);
-			System.out.print("Zpracovávám");
+			System.out.println("ï¿½ï¿½slo ke zpracovï¿½nï¿½: " + cislo);
+			System.out.print("Zpracovï¿½vï¿½m");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -50,8 +50,8 @@ public class Main {
 
 			String cislo2 = s.next();
 
-			System.out.println("èíslo ke zpracování: " + cislo2);
-			System.out.print("Zpracovávám");
+			System.out.println("ï¿½ï¿½slo ke zpracovï¿½nï¿½: " + cislo2);
+			System.out.print("Zpracovï¿½vï¿½m");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -84,8 +84,8 @@ public class Main {
 
 			double cislo8 = s.nextDouble();
 
-			System.out.println("èíslo ke zpracování: " + cislo8);
-			System.out.print("Zpracovávám");
+			System.out.println("ï¿½ï¿½slo ke zpracovï¿½nï¿½: " + cislo8);
+			System.out.print("Zpracovï¿½vï¿½m");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -110,9 +110,9 @@ public class Main {
 
 			int number = s.nextInt();
 
-			System.out.println("èíslo ke zpracování: " + number);
+			System.out.println("ï¿½ï¿½slo ke zpracovï¿½nï¿½: " + number);
 			
-			System.out.print("Zpracovávám");
+			System.out.print("Zpracovï¿½vï¿½m");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
