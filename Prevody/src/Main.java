@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 
 		/*
-		 * 138 radku kodu
+		 * 138 radku kodu;
 		 */
 
 		Dvoj dvoj = new Dvoj();
@@ -23,8 +23,8 @@ public class Main {
 
 			int cislo = s.nextInt();
 
-			System.out.println("��slo ke zpracov�n�: " + cislo);
-			System.out.print("Zpracov�v�m");
+			System.out.println("cislo ke zpracovani: " + cislo);
+			System.out.print("Zpracovavam");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -50,8 +50,8 @@ public class Main {
 
 			String cislo2 = s.next();
 
-			System.out.println("��slo ke zpracov�n�: " + cislo2);
-			System.out.print("Zpracov�v�m");
+			System.out.println("cislo ke zpracovani: " + cislo2);
+			System.out.print("Zpracovavam");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -84,8 +84,8 @@ public class Main {
 
 			double cislo8 = s.nextDouble();
 
-			System.out.println("��slo ke zpracov�n�: " + cislo8);
-			System.out.print("Zpracov�v�m");
+			System.out.println("cislo ke zpracovani: " + cislo8);
+			System.out.print("Zpracovavam");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
@@ -110,9 +110,9 @@ public class Main {
 
 			int number = s.nextInt();
 
-			System.out.println("��slo ke zpracov�n�: " + number);
+			System.out.println("cislo ke zpracovani: " + number);
 			
-			System.out.print("Zpracov�v�m");
+			System.out.print("Zpracovavam");
 			Thread.sleep(400);
 			System.out.print(".");
 			Thread.sleep(400);
