@@ -17,7 +17,6 @@ public class Main implements ActionListener {
 	private static JLabel success;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		JPanel panel = new JPanel();
 		JFrame frame = new JFrame();
