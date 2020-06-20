@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Dvoj {
 
@@ -12,7 +13,90 @@ public class Dvoj {
 	ArrayList<Integer> arr8 = new ArrayList<Integer>();
 	int[] arrindex = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 9192 };
 	int asd = 0;
+	Scanner s = new Scanner(System.in);
+	/*vytvorena metoda ZPRACOVANI, ktera bude vypisuje grafickou cast zpracovani. 
+	 * Misto toho aby 20 radku byly nakopirovane v kazdem CASE bude pouzita metoda, ktera zkrati kod*/
+	public void zpracovani(Object a) throws InterruptedException{   
+		System.out.println("Zadej cislo ke zpracovani");
+		System.out.println("Cislo ke zpracovani: " + a);
+		System.out.print("Zpracovavam");
+		for(int i=0;i<6;i++){
+			Thread.sleep(400);
+			System.out.print(".");
+		}
+		System.out.println("");
+	}
+	/* Vetsina kodu mainu v programu je useless a da se lehce zkratit,
+	 * proto byla vytvorena metoda na start programu, ktera se bude hodit v default case switche */
+	public void start() throws InterruptedException{  
+		
 
+		System.out.println("Chces z 10 --> 2 (1) nebo 2 --> 10 (0) nebo 10 --> 8 (2)");
+
+		int vyber = s.nextInt();
+
+		switch (vyber) {
+		case 1:
+			System.out.println("10 --> 2");
+			System.out.println("Zadej cislo ke zpracovani");
+			int cislo = s.nextInt();
+			zpracovani(cislo);
+			Pocitej10(cislo);
+
+			break;
+
+		case 0:
+
+			System.out.println("2 --> 10");
+			System.out.println("Zadej cislo ke zpracovani");
+
+			String cislo2 = s.next();
+
+			zpracovani(cislo2);
+
+			int[] arr2 = new int[cislo2.length()];
+
+			char[] chararr = cislo2.toCharArray();
+
+			for (int i = 0; i < cislo2.length(); i++) {
+				arr2[i] = chararr[i];
+			}
+
+			Pocitej2(arr2);
+
+			break;
+
+		case 2:
+
+			System.out.println("Zadej 10 cislo");
+
+			double cislo8 = s.nextDouble();
+
+			zpracovani(cislo8);
+
+			Pocitej8(cislo8);
+
+			break;
+
+		case 16:
+
+			System.out.println("Zadej 10 cislo");
+
+			int number = s.nextInt();
+			
+			zpracovani(number);
+
+			Sestnact(number);
+
+			break;
+		/* pridany default case, provede se kdyz uzivatel zada spatne cislo volby. 
+		* Po tom co se vypise sysout automaticky se restartuje program */
+		default: 		
+			System.out.println("Spatna volba. Zadej spravne cislo volby.");
+			start();
+		}
+
+	}
 	public void Pocitej10(int i) {
 
 		if (i % 2 == 0) {
@@ -25,7 +109,7 @@ public class Dvoj {
 				Pocitej10(dell);
 			}
 			if (dell == 0) {
-				System.out.println("Výsledek");
+				System.out.println("Vysledek");
 			}
 		}
 
@@ -40,7 +124,7 @@ public class Dvoj {
 				Pocitej10(del);
 			}
 			if (del == 0) {
-				System.out.println("Výsledek");
+				System.out.println("Vysledek");
 			}
 
 		}
@@ -129,5 +213,7 @@ public class Dvoj {
 		System.out.println("Hex cislo je: " + hexValue);
 
 	}
+
+
 
 }
